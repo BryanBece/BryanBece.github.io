@@ -1,0 +1,143 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }  
+body{
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    width: 1440px;
+    height: 1080px;
+    background: #F3F5FC;
+}
+.main {
+    max-width: 45rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+  }
+.titulo{
+    text-align: center;
+    font-size: 30px;
+    padding: 1.5rem;
+    text-align: center;
+    line-height: 150%;
+    color: #000000;    
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.text1{
+    text-align: auto;
+    margin: 5rem 1rem 0 1rem;
+    font-size: 20px;
+    line-height: 150%;
+    color: #000000;    
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.formbox, .msgbox{
+    padding: 1rem; 
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    border-radius: 0.5rem;
+    height: auto;
+    width: 720px;
+}
+.text-input{
+    width: 100%;
+    height: 222px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 1px;
+}
+.button-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .button-container:last-child {
+    margin: 0 1rem 0 1rem;
+  }
+.boton1 {
+    border: 0;
+    color: white;
+    font-weight: bold;
+    background: #0A3871;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 200px;
+    height: 40px;
+}
+.boton1:hover, .botoncopiar:hover {
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    color: #0A3871;
+}
+.boton2{
+    border: 0;
+    font-weight: bold;
+    background:#D8DFE8;
+    padding: 1rem;
+    margin-top: 1rem;
+    border: 1px solid #0A3871;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 200px;
+    height: 40px;
+}
+.boton2:hover {
+    background: #0A3871;
+    color: white;
+}
+.text2{
+    text-align: auto;
+    margin: 1rem 1rem 0 1rem;
+    font-size: 20px;
+    line-height: 150%;
+    color: #000000;    
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.msgbox{
+    padding: 1rem; 
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    border-radius: 0.5rem;
+    height: auto;
+    width: 720px;
+}
+.botoncopiar{
+    border: 0;
+    font-weight: bold;
+    background:#0A3871;
+    color: white;
+    padding: 1rem;
+    margin-top: 1rem;
+    border: 1px solid #0A3871;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 200px;
+    height: 40px;
+}
+.footer{
+    text-align: left;
+    font-size: 15px;
+    color: black;  
+  }
+.footer span{
+    color: #0A3871;
+    font-weight: bold;
+}

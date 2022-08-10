@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang = "es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Encriptador - Desencriptador de Texto</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <h1 class="titulo">Encriptador - Desencriptador de Texto</h1>
+        <main class="main">
+            <h2 class="text1">Ingrese el texto aqui</h2>
+            <section class="formbox">
+              <form id="formulario">
+                <textarea class="text-input" name="input-texto" id="inputDeTexto" required placeholder="Solo letras en minuscula y sin acento." rows="50" cols="100"></textarea>
+            </section>
+                <div class="button-container">
+                  <input class="boton1" type="submit" value="Encriptar" id="boton-encriptar">
+                  <input class="boton2" type="submit" value="Desencriptar" id="boton-desencriptar">
+                </div>
+              </form>
+              <h2 class="text2">Resultado</h2>
+              <section class="msgbox">
+                <textarea class="text-input" name="mensaje-texto" placeholder="No hay texto ingresado aun." id="mensaje-texto"rows="5" cols="50"></textarea>              
+              </section>
+              <input class="botoncopiar" type="submit" value="Copiar texto" id="boton-copiar">
+        </main>
+        <footer>
+            <p class="footer">Hecho por <span>Bryan Becerra</span>|&copy;</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
