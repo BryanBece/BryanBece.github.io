@@ -4,8 +4,8 @@ html {
   }
   
   * {
-    margin: 0;
-    padding: 0;
+    margin: auto;
+    padding: auto;
   }
   
   *, *:before, *:after {
@@ -14,14 +14,16 @@ html {
 body{
     font-family: 'Montserrat', sans-serif;
     position: absolute;
-    width: 1440px;
-    height: 1080px;
+    width: auto;
+    height: auto;
     background: #F3F5FC;
+
 }
+
 .main {
     max-width: 45rem;
     margin: auto;
-    display: flex;
+    display: auto;
     justify-content: center;
     flex-direction: column;
     gap: 2rem;
@@ -30,7 +32,6 @@ body{
     text-align: center;
     font-size: 30px;
     padding: 1.5rem;
-    text-align: center;
     line-height: 150%;
     color: #000000;    
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -48,8 +49,9 @@ body{
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     background-color: white;
     border-radius: 0.5rem;
-    height: auto;
-    width: 720px;
+    height: 100%;
+    width: 100%;
+
 }
 .text-input{
     width: 100%;
@@ -61,6 +63,17 @@ body{
     color: #000000;
     margin-bottom: 1px;
 }
+.error {
+    background-color: #0A3871;    
+    padding: 1rem;    
+    font-size: 1.3rem;    
+    margin: 1rem auto 0;
+    color: white;   
+    text-align: center; 
+    text-transform: uppercase;
+    font-weight: bold;    
+    border-radius: 0.5rem;
+  }
 .button-container {
     display: flex;
     justify-content: space-between;
@@ -79,8 +92,8 @@ body{
     margin-right: 1rem;
     border-radius: 20px;
     cursor: pointer;
-    width: 200px;
-    height: 40px;
+    width: 40%;
+    height: auto;
 }
 .boton1:hover, .botoncopiar:hover {
     background: #D8DFE8;
@@ -96,8 +109,8 @@ body{
     border: 1px solid #0A3871;
     border-radius: 20px;
     cursor: pointer;
-    width: 200px;
-    height: 40px;
+    width: 40%;
+    height: auto;
 }
 .boton2:hover {
     background: #0A3871;
@@ -111,14 +124,6 @@ body{
     color: #000000;    
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.msgbox{
-    padding: 1rem; 
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-    background-color: white;
-    border-radius: 0.5rem;
-    height: auto;
-    width: 720px;
-}
 .botoncopiar{
     border: 0;
     font-weight: bold;
@@ -126,18 +131,64 @@ body{
     color: white;
     padding: 1rem;
     margin-top: 1rem;
+    margin-bottom: 1rem;
     border: 1px solid #0A3871;
     border-radius: 20px;
     cursor: pointer;
-    width: 200px;
-    height: 40px;
+    width: 40%;
+    height: auto;
+    display: block;
 }
 .footer{
-    text-align: left;
+    text-align: center;
     font-size: 15px;
     color: black;  
   }
 .footer span{
     color: #0A3871;
     font-weight: bold;
+}
+
+@media screen and (max-width: 720px){
+    .main {
+        flex-direction: column;
+        gap: 1rem;
+        display: flex;
+    }
+    .formbox, .msgbox{
+        width: 100%;
+        height: 100%;
+    }
+    .text-input{
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        padding-left: 10px;
+        font-size: 16px;
+        color: #000000;
+        margin-bottom: 1px;
+    }
+    .button-container {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .button-container:last-child {
+        margin: 0;
+    }
+    .boton1 {
+        margin: 1rem 0 1rem 0;
+    }
+    .boton2 {
+        margin: 1rem 0 1rem 0;
+    }
+    .text2{
+        margin: 1rem 1rem 0 1rem;
+    }
+    .botoncopiar{
+        margin: 1rem 0 1rem 0;
+    }
+    .footer{
+        text-align: center;
+    }
 }
